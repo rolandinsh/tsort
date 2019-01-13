@@ -4,7 +4,7 @@
   Plugin Name: tSort
   Plugin URI: https://mediabox.lv/wordpress/
   Description: post types
-  Version: 1.0.4
+  Version: 1.0.5
   Requires at least: 4.8
   Tested up to: 5.0.3
   Author: Rolands Umbrovskis
@@ -39,7 +39,7 @@ class tSort {
     var $jqsdir;
 
     public function __construct() {
-        $this->vers   = '1.0.4';
+        $this->vers   = '1.0.5';
         $this->jqsdir = __DIR__;
         add_action('init', array(&$this, 'jqSortable'));
     }
