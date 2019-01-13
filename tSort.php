@@ -48,12 +48,12 @@ class tSort {
 
         if (!is_admin()) {
             wp_enqueue_script('jquery');
-            wp_register_script('jqsortable', plugins_url('/tSort/js/jquery.tablesorter.min.js', $this->jqsdir), ['jquery'], $this->vers, false);
+            wp_register_script('jqsortable', plugins_url('/tsort/js/jquery.tablesorter.min.js', $this->jqsdir), ['jquery'], $this->vers, false);
             wp_enqueue_script('jqsortable');
-            wp_register_script('tsort', plugins_url('/tSort/tsort.js', $this->jqsdir), ['jqsortable'], $this->vers, false);
+            wp_register_script('tsort', plugins_url('/tsort/tsort.js', $this->jqsdir), ['jqsortable'], $this->vers, false);
             wp_enqueue_script('tsort');
 
-            wp_register_style('jqsortable', plugins_url('/tSort/css/theme.default.min.css', $this->jqsdir), [], $this->vers, true);
+            wp_register_style('jqsortable', plugins_url('/tsort/css/theme.default.min.css', $this->jqsdir), [], $this->vers, true);
             wp_enqueue_style('jqsortable');
         }
     }
